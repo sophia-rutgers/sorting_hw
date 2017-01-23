@@ -7,3 +7,6 @@ to install all the dependencies in requirements.txt.
 TESTING
 
 run python -m pytest
+
+TRAVIS URL
+https://travis-ci.org/sophia-rutgers/sorting_hw
