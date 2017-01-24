@@ -7,12 +7,9 @@ def BubbleSort(l):
         print 'empty list'
     if len(l) == 1:
         print 'only 1 element in list'
-    if len(l)!=len(np.unique(l)):
-        print 'deleted duplicates'
     for i in l:
         if type(i) == str:
             print 'not a number'
-    l = np.unique(l)
     for i in range(len(l)-1,0,-1):
         for num in range(i):
             if l[num] > l[num+1]:

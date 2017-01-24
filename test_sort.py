@@ -12,7 +12,7 @@ def test_bubble_empty():
 
 def test_bubble_duplicate():
     l = [1,6,4,4]
-    assert len(BubbleSort([l])) == len(np.unique(l))
+    assert np.all(BubbleSort([l])) == np.all([1,4,4,6])
 
 def test_bubble_single_element():
     l = [1]
@@ -28,7 +28,7 @@ def test_quicksort_empty():
 
 def test_quicksort_duplicate():
     l = [1,6,4,4]
-    assert len(QS([l])) == len(np.unique(l))
+    assert np.all(BubbleSort([l])) == np.all([1,4,4,6])
 
 def test_quicksort_single_element():
     l = [1]

@@ -32,12 +32,9 @@ def QS(l):
         print 'empty list'
     if len(l) == 1:
         print 'only 1 element in list'
-    if len(l)!=len(np.unique(l)):
-        print 'deleted duplicates'
     for i in l:
         if type(i) == str:
             print 'not a number'
-    l = np.unique(l)
     quicksort(l,0,len(l)-1)
     return l
 
